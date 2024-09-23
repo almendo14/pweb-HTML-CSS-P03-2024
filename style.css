@@ -1,0 +1,145 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+}
+
+header {
+      background: yellow;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+}
+
+nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+}
+
+.humberger {
+      display: none;
+      font-size: 2rem;
+}
+
+.logo {
+      height: 50px;
+}
+
+/*Responsive Layout*/
+@media (max-width: 768px) {
+      nav ul {
+      display: none;
+      }
+      .hamburger {
+      display: block;
+      }
+      .show {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: yellow;
+      padding: 10px;
+      border-radius: 5px;
+      }
+}
+
+/*Landing Page Styling*/
+.landing {
+      text-align: center;
+      padding: 100px 20px;
+      background: url('images/background.jpg') no-repeat center center/cover;
+      color: white;
+}
+
+.cta-button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+}
+
+.cta-button:hover {
+      background-color: #555;
+}
+
+/* Section Styliing*/
+section {
+      padding: 50px 20px;
+      text-align: center;
+}
+
+/* Service Styling */
+.service-item {
+      margin: 20px;
+      text-align: center;
+}
+
+/* Gallery Styling */
+.gallery-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+}
+
+.gallery-item {
+      text-align: center;
+      flex: 1 1 300px;
+      max-width: 400px;
+}
+
+.gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #555;
+}
+
+/* Testimonials */
+.testimonial {
+      margin: 20px;
+      font-style: italic;
+      color: #333;
+}
+
+
+/* Footer */
+footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+      .gallery-container {
+      flex-direction: column;
+      }
+}
