@@ -77,7 +77,16 @@ nav ul li a {
       margin-top: 20px;
 }
 
-.cta-button:hover {
+.see-button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 10px;
+}
+
+.cta-button:hover, .see-button:hover {
       background-color: #555;
 }
 
@@ -122,6 +131,11 @@ section {
       color: #555;
 }
 
+.gallery-item:hover {
+      position: relative;
+      display: inline-block;
+}
+
 /* Testimonials */
 .testimonial {
       margin: 20px;
@@ -143,4 +157,28 @@ footer {
       .gallery-container {
       flex-direction: column;
       }
+}
+
+.dropdown {
+      position: relative;
+      display: inline-block;
+}
+
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+}
+
+.gallery-item:hover .dropdown-content {
+      display: block;
+      top: 100%;
+}
+
+.link:hover {
+      color: red;
 }
