@@ -111,6 +111,13 @@ section {
       flex-wrap: wrap;
 }
 
+.grid-gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+  }
+
 .gallery-item {
       text-align: center;
       flex: 1 1 300px;
@@ -156,6 +163,12 @@ footer {
 @media (max-width: 768px) {
       .gallery-container {
       flex-direction: column;
+      }
+}
+
+@media (max-width: 768px) {
+      .grid-gallery-container {
+          grid-template-columns: 1fr;
       }
 }
 
